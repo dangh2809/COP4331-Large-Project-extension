@@ -61,6 +61,7 @@ export function login(app: Express, client: MongoClient): RequestHandler {
                     res.status(200).json(response)
                     return
                 }
+                
 
                 response = {
                     userId: queryResults[0]._id.toString(),

@@ -62,6 +62,7 @@ function Login() {
       };
       localStorage.setItem("user_data", JSON.stringify(user));
       setMessage("");
+      console.log("Login Succesfull")
       window.location.href = "/#/userPage";
     }
   }
